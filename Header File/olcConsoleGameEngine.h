@@ -10,21 +10,6 @@ function with the good stuff, it gives you the elapsed time since the last call 
 can modify your stuff dynamically. Both functions should return true, unless you need
 the application to close.
 
-	int main()
-	{
-		// Use olcConsoleGameEngine derived app
-		OneLoneCoder_Example game;
-
-		// Create a console with resolution 160x100 characters
-		// Each character occupies 8x8 pixels
-		game.ConstructConsole(160, 100, 8, 8);
-
-		// Start the engine!
-		game.Start();
-
-		return 0;
-	}
-
 Input is also handled for you - interrogate the m_keys[] array with the virtual
 keycode you want to know about. bPressed is set for the frame the key is pressed down
 in, bHeld is set if the key is held down, bReleased is set for the frame the key
@@ -838,7 +823,7 @@ private:
 
 				// Update Title & Present Screen Buffer
 				wchar_t s[256];
-				swprintf_s(s, 256, L"OneLoneCoder.com - Console Game Engine - %s - FPS: %3.2f", m_sAppName.c_str(), 1.0f / fElapsedTime);
+				swprintf_s(s, 256, L"Console Game Engine - %s - FPS: %3.2f", m_sAppName.c_str(), 1.0f / fElapsedTime);
 				SetConsoleTitle(s);
 				WriteConsoleOutput(m_hConsole, m_bufScreen, { (short)m_nScreenWidth, (short)m_nScreenHeight }, { 0,0 }, &m_rectWindow);
 			}
