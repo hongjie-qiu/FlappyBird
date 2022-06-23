@@ -13,4 +13,4 @@ The number of games, the current score, and the highest score will be recorded.
 
 ### Example Screenshot:
 
-![03ee57ed3fb6fcce24bde7e4efa661e](https://user-images.githubusercontent.com/77599736/175397989-d5cba003-708a-4a83-a342-8ef0ee0703f6.jpg)
+![21ee7e16d86adadc423512b21f3973f](https://user-images.githubusercontent.com/77599736/175399983-4c52bb5a-9544-4b75-8cd9-b2bc5b69e83e.jpg)
